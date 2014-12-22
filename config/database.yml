@@ -1,25 +1,18 @@
 development:
-      host: localhost
+      host: 	<%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
       adapter: mysql
-      database: fedena_ultimate
-      port: 3306
-      username: root
-      password: foradian
-
-test: &test
-      host: localhost
-      adapter: mysql
-      database: fedena_two_new
-      port: 3306
-      username: root
-      password: foradian
+      database: "<%=ENV['OPENSHIFT_APP_NAME']%>"
+      port:  	<%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
+      username: "<%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%>"
+      password: "<%=ENV['OPENSHIFT_MYSQL_DB_PASSWORD']%>"
+      
 
 production:
-      host: localhost
+      host: 	<%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
       adapter: mysql
-      database: fedena_ultimate
-      port: 3306
-      username: root
-      password: foradian
+      database: "<%=ENV['OPENSHIFT_APP_NAME']%>"
+      port:  	<%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
+      username: "<%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%>"
+      password: "<%=ENV['OPENSHIFT_MYSQL_DB_PASSWORD']%>"
 cucumber:
   <<: *test
