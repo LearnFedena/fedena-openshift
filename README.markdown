@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 #Learn Fedena Instruction For Fedena-Openshift
+=======
+#LEARN FEDENA INSTRUCTION FOR FEDENA-OPENSHIFT
+>>>>>>> 4f4f571790d8fa80ea3d27bc29c543610af0ca25
 Fedena-Openshift is original projectfedena school management system that has been preconfigured to be hosted on the popular openshift cloud platform.
 
 No additional configuration is required. Just download to your local machine and push to openshift
 
+<<<<<<< HEAD
 #Installation 
+=======
+#INSTALLATION 
+>>>>>>> 4f4f571790d8fa80ea3d27bc29c543610af0ca25
 
 
 ======================================================================================================================================== 
