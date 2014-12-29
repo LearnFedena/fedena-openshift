@@ -34,6 +34,7 @@ No additional configuration is required. Just download to your local machine and
 
 10) Push your changes to openshift:
 
+<<<<<<< HEAD
 `git push`
 
 11) SSH to your openshift application and change to the application root directory.
@@ -60,17 +61,57 @@ Your fedena school management should be fully deployed to openshift using fedena
 #For detailed installation instruction
 
 visit  http://learnfedena.com/how-to-install-fedena-on-openshift 
+=======
+    `git push`
+
+11) SSH to your openshift application and change to the application root directory.
+
+    `rhc ssh <app-name>`
+
+12) Execute the following to populate your application database with tables:
+
+    `bundle exec rake db:migrate RAILS_ENV="production"`
+
+13) Populate your tables with initial data with the following command:
+
+    `bundle exec rake db:seed RAILS_ENV="production"`
+
+Your fedena school management should be fully deployed to openshift using fedena-openshift
+
+#Default Login Details
+
+ You can log in with following usernames and passwords:
+
+    *  Username - admin, password - admin123
+    
+
+#For detailed installation instruction
+
+visit  http://learnfedena.com/how-to-install-fedena-on-openshift 
 
 #Community Support:
 
 Learnfedena.com is a community driven Questions and Answers website which allows the open source community of Fedena school management software members gets advice and assistance from other members of the community.
 
 #Fedena : Open source school management system
+>>>>>>> 459ebd891c52a13a56fecf0a533b22a2633b9481
 
 Project Fedena is the open source school management system based on Ruby on Rails. It is developed by a team of developers at Foradian Technologies. The project was made open source by Foradian, and is now maintained by the open source community. Fedena is the ideal solution for schools and campuses that want an easy means to manage all campus records.
 
+<<<<<<< HEAD
+Learnfedena.com is a community driven Questions and Answers website which allows the open source community of Fedena school management software members gets advice and assistance from other members of the community.
+
+#Fedena : Open source school management system
+
+Project Fedena is the open source school management system based on Ruby on Rails. It is developed by a team of developers at Foradian Technologies. The project was made open source by Foradian, and is now maintained by the open source community. Fedena is the ideal solution for schools and campuses that want an easy means to manage all campus records.
+
+=======
+>>>>>>> 459ebd891c52a13a56fecf0a533b22a2633b9481
 
 #License
 
 Fedena is released under the Apache License 2.0.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 459ebd891c52a13a56fecf0a533b22a2633b9481

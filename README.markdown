@@ -34,6 +34,7 @@ No additional configuration is required. Just download to your local machine and
 
 10) Push your changes to openshift:
 
+<<<<<<< HEAD
 `git push`
 
 11) SSH to your openshift application and change to the application root directory.
@@ -47,6 +48,21 @@ No additional configuration is required. Just download to your local machine and
 13) Populate your tables with initial data with the following command:
 
    `bundle exec rake db:seed RAILS_ENV="production"`
+=======
+    `git push`
+
+11) SSH to your openshift application and change to the application root directory.
+
+    `rhc ssh <app-name>`
+
+12) Execute the following to populate your application database with tables:
+
+    `bundle exec rake db:migrate RAILS_ENV="production"`
+
+13) Populate your tables with initial data with the following command:
+
+    `bundle exec rake db:seed RAILS_ENV="production"`
+>>>>>>> 459ebd891c52a13a56fecf0a533b22a2633b9481
 
 Your fedena school management should be fully deployed to openshift using fedena-openshift
 
@@ -73,4 +89,3 @@ Project Fedena is the open source school management system based on Ruby on Rail
 #License
 
 Fedena is released under the Apache License 2.0.
-
